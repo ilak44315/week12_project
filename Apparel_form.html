@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<style>
+    .color-box{
+        background-color:#b2292d;
+        width:100%;
+        height:100%;
+    }
+</style>
+<div class="color-box">
+<h1>APPAREL<span style= color:black> FORM</span></h1>
+<h2><span style=color:#ffffff>Apparel Design Form </span></H2>
+    <body> <span style=color:#ffffff>Complete this form below for apparel request for marketing.</span></body>
+</div>
+<br>
+<br>
+<ul>
+    <li> Terms and Conditions </li>
+    All Apparel requests must be pre-approved by supervisors. Select apparel items have 3-6 week lead times and size contraints. Please plan accordingly when scheduling apparel for events. 
+</ul>
+<body class="container">
+    <br>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-auto">
+                    <label for="requesting-person">Name of Requester:</label>
+                    <input type="text" class ='form-control' id="requesting-person" placeholder="First and Last Name">
+            </div>
+                <div class="col-auto">
+                         <label for="requesting-supervisor">Name of Supervisor:</label>
+                        <input type="text" class ='form-control' id="requesting-supervisor" placeholder="First and Last Name">
+            </div>
+                <div class="col-auto">
+                        <label for="department">Department:</label>
+                       <input type="text" class ='form-control' id="department" placeholder="Department">
+            <br>
+                 </div>
+        </div>
+     <!-- Input Checkbox: Mini game, Event, Employee Moral.  BUILD JS-->
+         <!-- <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="mini-game" value="Mini-game">
+            <label class="form-check-label" for="inlineCheckbox1">Mini-game</label>
+        </div>
+        <div class="form-check form-check-inline">
+             <input class="form-check-input" type="checkbox" id="event" value="Event">
+             <label class="form-check-label" for="inlineCheckbox2">Event</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="employee-moral" value="Employee Moral">
+            <label class="form-check-label" for="inlineCheckbox3">Employee Moral</label>
+        </div>
+ </div> -->
+             <br>
+             <div class="row">
+                <div class="col-auto">
+                          <label for="account-number">Account Number:</label>
+                         <input type="text" class ='form-control' id="account-number" placeholder="Acct Number to charge">
+            </div>
+                <div class="col-auto">
+                     <label for="requesting-person">Total Budget:</label>
+                    <input type="text" class ='form-control' id="budget" placeholder="Estimated Budget">
+            </div>
+             <div class="col-auto">
+                      <label for="new-deadline-date">Deadline</label>
+                     <input type="date" class ='form-control' id="new-deadline-date">
+            </div>
+        </div>
+    </div>
+
+    <!-- Second container -->
+        <br>
+        <ul>Notes:<br>
+        Please fill-out sizes needed in the box below. Understand larger sizes may be made in similar but different materials. Larger sizes will cost more, and too few sizes will create an upcharge. 
+        </ul>
+        <div class="card">
+            <div class="card-body">
+        <h2 class="text-center">Apparel Design Preferences</h2>
+        <ul>
+            <li> Please attach any insiration photos to this form. </li> 
+       <!-- Input attach photo button -->
+       <div class="mb3">
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+              </form>
+        </ul>
+    </div>
+             <div class="row">
+                 <div class="col-auto">
+                     <div class="form-group">
+                         <label for="apparel-type">Apparel Type</label>
+                         <input type="text" class ='form-control' id="apparel-type" placeholder="Apparel Type:ie, shirt, jacket, pull-over,hat">
+                 </div>
+            <div class="row">
+                <div class="col-auto">
+                    <div class="form-group">
+                        <label for="apparel-color">Apparel Color</label>
+                        <input type="text" class ='form-control' id="apparel-color" placeholder="">
+                </div>
+                <!-- Logo placement check box: Front, Back, side,bUILD JS  -->
+                <!-- <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="front-logo" value="front-logo">
+                    <label class="form-check-label" for="inlineCheckbox1">Front Logo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                     <input class="form-check-input" type="checkbox" id="back-logo" value="back-logo">
+                     <label class="form-check-label" for="inlineCheckbox2">Back Logo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="sidesleeve_logo" value="sidesleet_log">
+                    <label class="form-check-label" for="inlineCheckbox3">Side or Sleeve logo</label> -->
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="row">
+    <div class="col-lg">
+        <ul>
+     <li>Design Notes</li>
+     <input type="text"class='form-control' id="Notes">
+ </ul>
+    </div>
+ </div>
+  <!-- add checkbox for request type ie: event/apparel/resourse. -->
+
+  <!-- add check box for new creation or asset update. -->
+            <br>
+        </div>
+       </div>
+    </div>
+</div>
+        <div>
+            <button id="add" class="btn btn-danger form-control">
+                Create
+            </button>
+ </div>
+  </div>
+    </div>
+   <table id="list" class="table table-dark table-striped">
+    <tr>
+        <th>Creation Date</th> 
+        <th>Requesting Person</th>
+        <th>Supervisor</th>
+        <th>Department</th>
+        <!-- <th>Event Type</th> -->
+        <th>Acct Number</th>
+        <th>Budget</th>
+        <th>Deadline</th>
+        <th>Apparel Type</th>
+        <th>Apparel Color</th>
+        <!-- <th>Logo Placement</th> -->
+        <th>Actions</th>
+    </tr>
+   </table>
+   <div class ='color-box'>
+
+   </div>
+    <!-- Add linked files.  -->
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <script src="node_modules/jquery/dist/jquery.js"></script> 
+   <script src="Apparel_form.js"></script>
+</body>
+</html>
